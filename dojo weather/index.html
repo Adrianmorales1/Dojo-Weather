@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "navbar">
+        <div class = "navsize"> 
+            <h1>DojoWeather</h1>
+            <div>
+                <h3 onclick="alert('Burbank')" >Burbank</h3>
+                <h3 onclick="alert('Chicago')" >Chicago</h3>
+                <h3 onclick="alert('Dallas')" >Dallas</h3>
+            </div>
+        </div>
+        
+    </div>
+    <div class = "main">
+        <div class = "topMain">
+            <h1>San Jose</h1>
+            <div class = "changeTemp"> 
+                <p>Show temperature in</p>
+                <select onchange="tempChange(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class = "weather">
+            <div class = "box1">
+                <h1>Today</h1>
+                <img src = "assets/some_rain.png" alt = "rain">
+                <p>some rain</p>
+                <div class = "temp">
+                    <h2>24°</h2>
+                    <h2>18°</h2>
+                </div>
+            </div>
+            <div class = "box2">
+                <h1>Tomorrow</h1>
+                <img src = "assets/some_sun.png" alt = "sun">
+                <p>some sun</p>
+                <div class = "temp2">
+                    <h2>27°</h2>
+                    <h2>19°</h2>
+                </div>
+            </div>
+            <div class = "box3">
+                <h1>Friday</h1>
+                <img src = "assets/some_clouds.png" alt = clouds>
+                <p>some cloud</p>
+                <div class = "temp3">
+                    <h2>21°</h2>
+                    <h2>16°</h2>
+                </div>
+            </div>
+            <div class = "box4">
+                <h1>Saturday</h1>
+                <img src = "assets/some_sun.png" alt = "sun">
+                <p>some sun</p>
+                <div class = "temp4">
+                    <h2>26°</h2>
+                    <h2>21°</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "cookies" id = "test">
+        <img src = "assets/cookie.png" alt = "cookies" >
+        <div class = "words">
+            <h3>Stop! Cookie time</h3>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads to provide social media features and to analyse our traffic. <a href = '#'>Read more...</a></p>
+        </div>
+        <button onclick = 'removecookies()'>I Accept</button>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
